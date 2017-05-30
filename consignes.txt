@@ -1,0 +1,52 @@
+# --- Rendu
+
+L’exercice est à rendre sur Google Classroom au format .zip, dans le devoir nommé « Examen – Rendu ».
+Au moment du rendu vous pouvez supprimer le dossier node_modules de l’exercice si vous le souhaitez afin que le dossier soit moins lourd à uploader.
+
+
+# --- Objectif
+
+Réaliser un petit gestionnaire de contacts sur Vue.js.
+La base du projet étant déjà créée, vous n'avez qu'à remplir les éléments manquants dans chacun des composants et réaliser le CSS. La plupart des éléments manquants sont définis en commentaire dans les composants par la mention "À faire".
+
+
+# --- Résultat attendu
+
+Résultat attendu en images dans le dossier "screens"
+Résultat attendu en vidéo : https://www.useloom.com/share/a7e67da2340a4ff0b49f9ba6ffffcf61
+
+Le rendu doit être le plus fidèle possible.
+
+
+# --- Structure
+
+L'application contient 4 composants :
+- App : affiche le composant ContactsList et et ContactDetails
+- ContactsList : liste de contacts
+- ContactsListItem : élément de la liste de contacts
+- ContactDetails : zone de détails d'un contact
+
+
+# --- Commandes
+
+npm install : Installer les packages nécessaires
+npm run dev : Lancer le projet - Accessible sur http://localhost:8080
+
+
+# --- En cas de problèmes
+
+- Si vous avez un problème de droits lors du npm install, c'est peut être un problème de droit. Mettez le mot "sudo" devant la commande.
+
+- Si vous avez un problème avec les packages malgré le npm install, vous pouvez télécharger le dossier node_modules à cette adresse qui est à mettre à la racine du projet : http://vincentgarreau.com/wsf/p2018-examen-node-modules.zip
+
+- Si vous avez toujours un problème avec les packages, mettez à jour Node.js en téléchargeant la version "Current" : https://nodejs.org/
+
+- Si vous avez toujours un problème avec les packages, mettez à jour npm en exécutant cette commande : npm install npm@latest -g
+
+- Si vous avez un problème pour lancer l'application, vérifiez bien que vous avez installé les packages. Si c'est le cas, il peut s'agir d'un problème de port : par défaut le port est défini sur 8080, vous pouvez le modifier dans webpack.config.js.
+
+- N'hésitez pas à vérifier les erreurs dans votre terminal et relancer la commande "npm run dev"
+
+- Correction du TP1 : https://github.com/VincentGarreau/WSF/tree/master/TP1-correction
+
+- Documentation de Vue.js : https://vuejs.org/v2/guide/ et https://vuejs.org/v2/api/
