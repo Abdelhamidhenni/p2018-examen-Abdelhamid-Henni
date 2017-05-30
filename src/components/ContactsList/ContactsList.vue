@@ -8,7 +8,7 @@
 
     <!-- Recherche -->
     <!-- À faire : créer un input de recherche et lier cet élément à la variable searchContact -->
-    <input type="text" name="contacts" v-model="searchContact">
+    <input type="text" placeholder="Rechercher un nom" name="contacts" v-model="searchContact">
 
     <!-- Liste des contacts -->
     <!-- À faire : réaliser la liste de contacts grâce aux éléments disponibles dans ce composant -->
@@ -57,7 +57,6 @@
             return item.name.toLowerCase().includes(searchStr)
           })
         }
-        console.log(contacts);
         return contacts
 
       }
@@ -84,13 +83,11 @@
         */
         axios.get('/users')
             .then((response) => {
-              console.log(response.data)
               this.contacts = response.data
             })
             .catch(function (error) {
               console.log(error)
             })
-        console.log('getContacts...')
 
       }
 
